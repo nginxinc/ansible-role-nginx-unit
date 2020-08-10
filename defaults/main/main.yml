@@ -1,0 +1,10 @@
+---
+# Install NGINX Unit and NGINX Unit modules.
+# Use a list of supported NGINX Unit modules.
+# Default is false.
+nginx_unit_enable: false
+nginx_unit_modules: []
+
+# Choose where to fetch the NGINX signing key from.
+# Default is the official NGINX signing key host.
+# nginx_signing_key: http://nginx.org/keys/nginx_signing.key

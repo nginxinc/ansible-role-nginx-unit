@@ -1,0 +1,13 @@
+---
+# Choose to install BSD packages or ports.
+# Options are true for packages or False for ports.
+# Default is true.
+nginx_unit_bsd_install_packages: true
+
+# Choose to install packages built from BSD ports collection if available.
+# Options are true for use packages or false for do not use packages.
+# Default is true.
+nginx_unit_bsd_portinstall_use_packages: true
+
+# FreeBSD extra packages
+nginx_unit_freebsd_extra_packages: ['security/ca_root_nss']
