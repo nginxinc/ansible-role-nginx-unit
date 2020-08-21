@@ -2,7 +2,7 @@
 
 ## 0.x (Unreleased)
 
-FEATURES:
+ENHANCEMENTS:
 
 *   Update Ansible to `2.9.12` and Ansible Lint to `4.3.0`.
 
