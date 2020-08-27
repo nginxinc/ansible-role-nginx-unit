@@ -10,7 +10,7 @@ ENHANCEMENTS:
 
 *   Update Ansible to `2.9.12` and Ansible Lint to `4.3.2`.
 *   Explicitly define `mode` in relevant tasks.
-*   Explictly define the `nginx-unit` `apt_repository` and `yum_repository` filename in Debian and RedHat based distros.
+*   Explicitly define the `nginx-unit` `apt_repository` and `yum_repository` filename in Debian and RedHat based distros.
 
 ## 0.1.0 (August 19, 2020)
 
