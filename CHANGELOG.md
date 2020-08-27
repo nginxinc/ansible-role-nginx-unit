@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.1 (August 21, 2020)
+## 0.2.0 (August 27, 2020)
 
 BREAKING CHANGES:
 
@@ -8,7 +8,7 @@ BREAKING CHANGES:
 
 ENHANCEMENTS:
 
-*   Update Ansible to `2.9.12` and Ansible Lint to `4.3.3`.
+*   Update Ansible to `2.9.12` and Ansible Lint to `4.3.2`.
 *   Explicitly define `mode` in relevant tasks.
 *   Explictly define the `nginx-unit` `apt_repository` and `yum_repository` filename in Debian and RedHat based distros.
 
