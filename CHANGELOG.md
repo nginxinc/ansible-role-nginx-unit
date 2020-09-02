@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 (Unreleased)
+
+ENHANCEMENTS:
+
+*   Update Ansible to `2.9.13` and Ansible Lint to `4.3.4`.
+
 ## 0.2.0 (August 27, 2020)
 
 BREAKING CHANGES:
