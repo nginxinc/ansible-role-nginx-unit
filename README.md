@@ -67,9 +67,9 @@ Role Variables
 
 This role has multiple variables. The descriptions and defaults for all these variables can be found in the **`defaults/main`** directory in the following files:
 
--   **[defaults/main/main.yml](https://github.com/nginxinc/ansible-role-nginx-unit/blob/master/defaults/main/main.yml):** NGINX Unit installation variables
--   **[defaults/main/selinux.yml](https://github.com/nginxinc/ansible-role-nginx-unit/blob/master/defaults/main/unit.yml):** NGINX Unit SELinux variables
--   **[defaults/main/bsd.yml](https://github.com/nginxinc/ansible-role-nginx-unit/blob/master/defaults/main/bsd.yml):** BSD specific installation variables
+-   **[defaults/main/main.yml](https://github.com/nginxinc/ansible-role-nginx-unit/blob/main/defaults/main/main.yml):** NGINX Unit installation variables
+-   **[defaults/main/selinux.yml](https://github.com/nginxinc/ansible-role-nginx-unit/blob/main/defaults/main/unit.yml):** NGINX Unit SELinux variables
+-   **[defaults/main/bsd.yml](https://github.com/nginxinc/ansible-role-nginx-unit/blob/main/defaults/main/bsd.yml):** BSD specific installation variables
 
 Example Playbooks
 -----------------
@@ -92,7 +92,7 @@ You can find an Ansible collection of roles to install and configure NGINX Contr
 License
 -------
 
-[Apache License, Version 2.0](https://github.com/nginxinc/ansible-role-nginx/blob/master/LICENSE)
+[Apache License, Version 2.0](https://github.com/nginxinc/ansible-role-nginx/blob/main/LICENSE)
 
 Author Information
 ------------------
