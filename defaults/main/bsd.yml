@@ -8,6 +8,3 @@ nginx_unit_bsd_install_packages: true
 # Options are true for use packages or false for do not use packages.
 # Default is true.
 nginx_unit_bsd_portinstall_use_packages: true
-
-# FreeBSD extra packages
-nginx_unit_freebsd_extra_packages: ['security/ca_root_nss']

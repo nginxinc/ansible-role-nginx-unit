@@ -1,11 +1,11 @@
 ---
-- name: "(Handler: Debian/Ubuntu/CentOS/RedHat) Start NGINX Unit"
+- name: (Handler - CentOS/Debian/RedHat/Ubuntu) Start NGINX Unit
   service:
     name: unit
     state: started
     enabled: yes
 
-- name: "(Handler: FreeBSD) Start NGINX Unit"
+- name: (Handler - FreeBSD) Start NGINX Unit
   service:
     name: unitd
     state: started
