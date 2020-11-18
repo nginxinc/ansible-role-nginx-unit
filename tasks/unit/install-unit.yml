@@ -8,7 +8,7 @@
     name: unit
     state: present
   when: ansible_facts['os_family'] != "FreeBSD"
-  notify: (Handler - CentOS/Debian/RedHat/Ubuntu) Start NGINX Unit
+  notify: (Handler - Amazon Linux/CentOS/Debian/RedHat/Ubuntu) Start NGINX Unit
 
 - name: (FreeBSD) Install NGINX Unit
   portinstall:

@@ -1,5 +1,5 @@
 ---
-- name: (Handler - CentOS/Debian/RedHat/Ubuntu) Start NGINX Unit
+- name: (Handler - Amazon Linux/CentOS/Debian/RedHat/Ubuntu) Start NGINX Unit
   service:
     name: unit
     state: started
