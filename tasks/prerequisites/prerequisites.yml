@@ -13,7 +13,7 @@
       include_tasks: "{{ role_path }}/tasks/prerequisites/setup-selinux.yml"
       when: ansible_facts['selinux']['mode'] is defined
   when:
-    - nginx_selinux | bool
+    - nginx_unit_selinux | bool
     - "'selinux' in ansible_facts"
     - ansible_facts['os_family'] in ['RedHat']
     - ansible_facts['distribution'] not in ['Amazon']
