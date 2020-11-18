@@ -1,6 +1,6 @@
 ---
 - name: Setup prerequisites
-  include_tasks: "{{ role_path }}/tasks/prerequisites/setup-{{ ansible_facts['os_family'] | lower }}.yml"
+  include_tasks: "{{ role_path }}/tasks/prerequisites/prerequisites.yml"
   tags: nginx_unit_prerequisites
 
 - name: Setup keys
