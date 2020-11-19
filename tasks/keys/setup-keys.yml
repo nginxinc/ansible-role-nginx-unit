@@ -1,10 +1,17 @@
 ---
-- name: "(Setup: Keys) Debian/Ubuntu"
-  include_tasks: "{{ role_path }}/tasks/keys/apt-key.yml"
-  when: ansible_os_family == "Debian"
-  tags: nginx_aptkey
+- name: (Debian/Red Hat OSs) Set up NGINX signing key URL
+  set_fact:
+    keysite: "{{ nginx_unit_signing_key | default(nginx_unit_default_signing_key) }}"
 
-- name: "(Setup: Keys) CentOS/RedHat"
-  include_tasks: "{{ role_path }}/tasks/keys/rpm-key.yml"
-  when: ansible_os_family == "RedHat"
-  tags: nginx_rpmkey
+- name: (Debian/Ubuntu) Add NGINX signing key
+  apt_key:
+    id: 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
+    url: "{{ keysite }}"
+  when: ansible_facts['os_family'] == "Debian"
+
+- name: (Amazon Linux/CentOS/RHEL) Add NGINX signing key
+  rpm_key:
+    fingerprint: 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
+    key: "{{ keysite }}"
+    validate_certs: "{{ (ansible_facts['distribution_major_version'] is version('6', '==')) | ternary('no', 'yes') }}"
+  when: ansible_facts['os_family'] in ['RedHat', 'Suse']

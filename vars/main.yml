@@ -1,1 +1,18 @@
 ---
+# Default NGINX Unit signing key
+nginx_unit_default_signing_key: https://nginx.org/keys/nginx_signing.key
+
+# Debian dependencies
+nginx_unit_debian_dependencies: [
+  'apt-transport-https', 'ca-certificates', 'dirmngr',
+]
+
+# Red Hat dependencies
+nginx_unit_redhat_dependencies: [
+  'ca-certificates', 'openssl',
+]
+
+# FreeBSD dependencies
+nginx_unit_freebsd_dependencies: [
+  'security/ca_root_nss',
+]

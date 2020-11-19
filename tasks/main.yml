@@ -1,19 +1,16 @@
 ---
-- name: "(Setup: All OSs) Setup Prerequisites"
-  include_tasks: "{{ role_path }}/tasks/prerequisites/setup-{{ ansible_os_family | lower }}.yml"
+- name: Setup prerequisites
+  include_tasks: "{{ role_path }}/tasks/prerequisites/prerequisites.yml"
   tags: nginx_unit_prerequisites
 
-- name: "(Setup: All OSs) Setup Keys"
-  import_tasks: keys/setup-keys.yml
+- name: Setup keys
+  include_tasks: keys/setup-keys.yml
   when:
-    - ansible_os_family == "Alpine"
-      or ansible_os_family == "Debian"
-      or ansible_os_family == "RedHat"
-      or ansible_os_family == "Suse"
+    - ansible_facts['os_family'] in ['Debian', 'RedHat']
     - nginx_unit_enable | bool
   tags: nginx_unit_key
 
-- name: "(Install: All OSs) Install NGINX Unit"
+- name: Install NGINX Unit
   include_tasks: "{{ role_path }}/tasks/unit/install-unit.yml"
   when: nginx_unit_enable | bool
   tags: nginx_unit_install
