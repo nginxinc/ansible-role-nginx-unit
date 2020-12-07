@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2 (Unreleased)
+
+BUG FIXES:
+
+Fix issue whereas SELinux state would not be correctly set back to `enforcing` when `nginx_unit_selinux: true`.
+
 ## 0.2.1 (November 19, 2020)
 
 ENHANCEMENTS:
