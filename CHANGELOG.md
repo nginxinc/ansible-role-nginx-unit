@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2 (Unreleased)
+
+ENHANCEMENTS:
+
+*   Update Molecule to `3.2.0` and Docker Python SDK to `4.4.0`.
+*   Remove CentOS/RHEL `6` from supported platforms due to EOL.
+
 ## 0.2.1 (November 19, 2020)
 
 ENHANCEMENTS:
