@@ -4,8 +4,9 @@
 
 ENHANCEMENTS:
 
-*   Update Molecule to `3.2.0` and Docker Python SDK to `4.4.0`.
+*   Update Molecule to `3.2.1` and Docker Python SDK to `4.4.0`.
 *   Remove CentOS/RHEL `6` from supported platforms due to EOL.
+*   Replace TravisCI with GitHub actions.
 
 BUG FIXES:
 
