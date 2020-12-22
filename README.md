@@ -1,8 +1,8 @@
 [![Ansible Galaxy](https://img.shields.io/badge/galaxy-nginxinc.nginx__unit-5bbdbf.svg)](https://galaxy.ansible.com/nginxinc/nginx_unit)
-[![Build Status](https://travis-ci.org/nginxinc/ansible-role-nginx-unit.svg?branch=main)](https://travis-ci.org/nginxinc/ansible-role-nginx-unit)
+[![Molecule CI/CD](https://github.com/nginxinc/ansible-role-nginx-unit/workflows/Molecule%20CI/CD/badge.svg)](https://github.com/nginxinc/ansible-role-nginx-unit/actions)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# 👾 *Help make the NGINX config Ansible role better by participating in our [survey](https://forms.office.com/Pages/ResponsePage.aspx?id=L_093Ttq0UCb4L-DJ9gcUKLQ7uTJaE1PitM_37KR881UM0NCWkY5UlE5MUYyWU1aTUcxV0NRUllJSC4u)!* 👾
+# 👾 *Help make the NGINX Unit Ansible role better by participating in our [survey](https://forms.office.com/Pages/ResponsePage.aspx?id=L_093Ttq0UCb4L-DJ9gcUKLQ7uTJaE1PitM_37KR881UM0NCWkY5UlE5MUYyWU1aTUcxV0NRUllJSC4u)!* 👾
 
 # Ansible NGINX Unit Role
 
