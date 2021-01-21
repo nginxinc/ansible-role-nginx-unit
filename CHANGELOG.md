@@ -8,7 +8,8 @@ Add support for Dependabot.
 
 ENHANCEMENTS:
 
-The GitHub actions Molecule CI/CD workflow is no longer run on a new release (this is not necessary since it already runs on every push).
+*   The GitHub actions Molecule CI/CD workflow is no longer run on a new release (this is not necessary since it already runs on every push).
+*   Update Ansible base to `2.10.5`.
 
 ## 0.2.2 (December 22, 2020)
 
