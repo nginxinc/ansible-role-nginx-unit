@@ -30,13 +30,8 @@ jobs:
           python-version: 3.x
 
       - name: Install Molecule dependencies
-        run: |
-          pip3 install ansible-base==2.10.3
-          pip3 install ansible==2.10.3
-          pip3 install ansible-lint==4.3.7
-          pip3 install yamllint==1.25.0
-          pip3 install "molecule[docker]"==3.2.1
-          pip3 install docker==4.4.0
+        run: pip3 install -r ./.github/workflows/requirements_molecule.txt
+
 
       - name: Run Molecule tests
         run: molecule test -s ${{ matrix.scenario }}
