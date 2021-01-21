@@ -2,6 +2,10 @@
 
 ## 0.2.3 (Unreleased)
 
+FEATURES:
+
+Add support for Dependabot.
+
 ENHANCEMENTS:
 
 The GitHub actions Molecule CI/CD workflow is no longer run on a new release (this is not necessary since it already runs on every push).
