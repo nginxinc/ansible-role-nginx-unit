@@ -30,7 +30,13 @@ jobs:
           python-version: 3.x
 
       - name: Install Molecule dependencies
-        run: pip3 install -r .github/workflows/requirements_molecule.txt
+        run: pip3 install -r .github/workflows/requirements/requirements_molecule.txt
+
+      - name: Install Ansible base dependencies
+        run: ansible-galaxy install -r .github/workflows/requirements/requirements_ansible.yml
+
+      - name: Uninstall Ansible community distribution (temporary)
+        run: pip3 uninstall -y ansible
 
       - name: Run Molecule tests
         run: molecule test -s ${{ matrix.scenario }}
