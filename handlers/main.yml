@@ -2,11 +2,11 @@
 - name: (Handler - Amazon Linux/CentOS/Debian/RedHat/Ubuntu) Start NGINX Unit
   service:
     name: unit
-    state: started
+    state: restarted
     enabled: yes
 
 - name: (Handler - FreeBSD) Start NGINX Unit
   service:
     name: unitd
-    state: started
+    state: restarted
     enabled: yes
